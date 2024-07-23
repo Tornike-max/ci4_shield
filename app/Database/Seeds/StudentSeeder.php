@@ -24,6 +24,7 @@ class StudentSeeder extends Seeder
             'name' => $faker->name,
             'email' => $faker->email,
             'phone' => $faker->phoneNumber,
+            'profile_image' => $faker->imageUrl(),
         ];
     }
 }

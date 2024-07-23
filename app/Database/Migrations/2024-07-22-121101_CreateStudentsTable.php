@@ -30,6 +30,11 @@ class CreateStudentsTable extends Migration
                 'constraint' => 50,
                 'null' => true
             ],
+            'profile_image' => [
+                'type' => 'VARCHAR',
+                'constraint' => 100,
+                'null' => true
+            ]
         ]);
         $this->forge->addPrimaryKey('id');
         $this->forge->createTable('students');
